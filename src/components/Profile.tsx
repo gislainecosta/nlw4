@@ -1,10 +1,15 @@
+import styles from '../styles/components/Profile.module.css'
+
+
 export function Profile( ) {
     return (
-        <div>
-            <img src="https://avatars.githubusercontent.com/u/62241763?s=460&u=9846af7d83a4e80ffe48b9264545f34a3e3b011a&v=4" alt="Perfil"/>
+        <div className={styles.profileContainer}>
+            <img src="https://github.com/gislainecosta.png" alt="Foto de Perfil"/>
             <div>
                 <strong>Gislaine Costa Pereira</strong>
-                <p>Level 1</p>
+                <p>
+                    <img src='icons/level.svg' alt='Icone de level'/>
+                    Level 1</p>
             </div>
         </div>
     )
